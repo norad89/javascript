@@ -1,3 +1,5 @@
+/* 
+
 // this method returns the first n
 // characters of the fibonacci series
 // printed as an array
@@ -68,3 +70,29 @@ function fibonacci_series(n) {
   console.log(fibonacci_for(5));
   console.log(fibonacci_while(5));
   console.log(recursive_fibonacci_at_index(5));
+  
+*/
+
+
+// fibonacci è una squenza che inizia per 0 1 1 2 3 5 8 dove ogni numero è la somma dei due precedenti
+// se vogliamo stampare i primi 10 numeri di fibonacci dobbiamo aggiungere un counter
+
+let fib = [0,1]
+let x = 0;
+let y = 1;
+
+let i
+
+function fibonacci(counter) {
+
+  for (i = 2; i < counter; i++) {
+    sum = x + y;
+    x = y;
+    y = sum;
+    
+  fib.push(y)
+
+}
+
+console.log(fib)
+}
