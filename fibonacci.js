@@ -1,4 +1,3 @@
-/* 
 
 // this method returns the first n
 // characters of the fibonacci series
@@ -71,7 +70,7 @@ function fibonacci_series(n) {
   console.log(fibonacci_while(5));
   console.log(recursive_fibonacci_at_index(5));
   
-*/
+
 
 
 // fibonacci è una squenza che inizia per 0 1 1 2 3 5 8 dove ogni numero è la somma dei due precedenti
