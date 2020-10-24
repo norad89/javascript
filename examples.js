@@ -1,4 +1,4 @@
-/* 
+
 
 const car = "Renault Clio";
 
@@ -212,4 +212,106 @@ function camping (val) {
 
 camping("Rome")
 
-*/
+function value(n) {
+    return n;    
+};
+f = value(5)
+
+
+function con(x) {
+    return x;
+};
+z = con(6) 
+
+
+console.log (z + f);
+
+
+
+function sum() {
+    let total = 0;
+    for (i = 0; i < arguments.length; i++) {
+        total += arguments[i]};
+        return total;
+}
+
+
+const addOne = constantAdd(1);
+const addFive = constantAdd(5);
+addOne(2); // 3
+addFive(2); // 5
+
+function constantAdd(constant) {
+    
+}
+
+function doThing(other) {
+    other(7);
+}
+
+function hello(nm) {
+    console.log(5 + nm);
+}
+
+doThing(hello);
+
+function constantAdd(constant) {
+    addFive(constant);
+}
+
+function addFive(operator) {
+    console.log(5 + operator);
+}
+
+
+
+ const addFive = function constantAdd(constant) {
+    addFive(constant);
+    function addFive(operator) {
+        console.log(5 + operator);
+    }
+    addOne(constant);
+    function addOne(operator) {
+        console.log(1 + operator);
+    }   
+}
+
+addFive(2);
+addOne(2);
+
+// calcolare quanti mesi compongono la ns età
+// parametri nome ed età
+// calcolare i mesi e i giorni
+// ciao sono x ho x anni x giorni x mesi
+
+var oggetto = {
+    nome: 'Oraldo',
+    età: 24,
+    calcolo: function calcoloMesi() {
+        let mesi = oggetto.età * 12;
+        calcoloGiorni();
+    
+        function calcoloGiorni() {
+            let giorni = oggetto.età * 365;
+            return (console.log('Ciao sono Oraldo, ho ' + oggetto.età + ' anni, che corrispondono a ' + mesi + ' mesi cioè ' + giorni + ' giorni.'))
+        };   
+            return mesi;
+    }
+}
+
+ 
+
+
+function calcoloMesi() {
+    let mesi = oggetto.età * 12;
+    calcoloGiorni();
+
+    function calcoloGiorni() {
+        let giorni = oggetto.età * 365;
+        return (console.log('Ciao sono Oraldo, ho ' + oggetto.età + ' anni, che corrispondono a ' + mesi + ' mesi cioè ' + giorni + ' giorni.'))
+    };   
+        return mesi;
+};
+
+
+calcoloMesi();
