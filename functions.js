@@ -20,6 +20,9 @@ var obj = {
 
 obj.foo2();
 
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+
 var lorenzo = {
     name: 'Lorenzo',
     greet: function(person) {
@@ -51,6 +54,9 @@ var result = test.b.c;
 
 result();
 
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+
 var name = "Laura";
 
 var me = {
@@ -67,6 +73,9 @@ var me = {
 me.withArrow();
 me.withoutArrow();
 
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+
 var cat = {
     lives: 9,
     jumps: function() {
@@ -75,9 +84,10 @@ var cat = {
     }
 };
 
-
 cat.jumps(); 
 
+/*--------------------------------------------*/
+/*--------------------------------------------*/
 
 function sum() {
 
@@ -106,8 +116,8 @@ function sum() {
 
 console.log(sum('4,6,7,88'));
 
-
-
+/*--------------------------------------------*/
+/*--------------------------------------------*/
 
 function download(url, callback) {
     
@@ -129,3 +139,23 @@ function downloadIamge(url, imageName, callback) {
 downloadImage("https://unsplash.com/photos/", "Z05GiksmqYU", () => {
 
 })
+
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+
+function factorial(num) {
+    let counter = num
+    let x = num;
+
+    for (let i = 1; i < counter; i++) {
+        y = --x;
+        x = y;
+        num = num * y 
+    }
+    return num;
+} 
+
+function recursiveFactorial(n) {
+    if (n == 0) return 1;
+    return n * recursiveFactorial(n - 1);
+}
