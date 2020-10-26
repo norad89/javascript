@@ -159,3 +159,45 @@ function recursiveFactorial(n) {
     if (n == 0) return 1;
     return n * recursiveFactorial(n - 1);
 }
+
+
+//This function should return true if numberToCheck
+//is multiple of targetNumber
+
+function isMultiple(targetNumber, numberToCheck) {
+    return numberToCheck % targetNumber === 0;
+}
+
+function fancyTernaryOperator(i) {
+    i % 3 === 0 && i % 5 === 0 ? console.log('FizzBuzz') :
+    i % 3 === 0 ? console.log('Fizz') : 
+    i % 5 === 0 ? console.log('Buzz') : 
+    console.log(i.toString());
+}
+
+function isMultipleThreeOrFive(n) {
+    for (i = 1; i < n; i++) {
+      fancyTernaryOperator(i);
+    }
+}
+
+/* ------------------------------------------ */
+
+function printNumber(m) {
+    if (isMultiple(3, m) && isMultiple(5, m)) {
+        return "FizzBuzz";
+      } else if (isMultiple(3, m)) {
+        return "Fizz";
+      } else if (isMultiple(5, m)) {
+        return "Buzz";
+      } else {
+        return m.toString();
+      }
+    }
+
+
+function fancier(m) {
+    for (i = 0; i < m; i++) {
+        console.log(printNumber(i));
+    }
+}
