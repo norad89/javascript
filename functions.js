@@ -130,7 +130,7 @@ download("Cowabunga", image => {
     console.log(image)
 });
 
-function downloadIamge(url, imageName, callback) {
+function downloadImage(url, imageName, callback) {
     setTimeout(function() {
         callback(url + imageName);
     }, 5000);
