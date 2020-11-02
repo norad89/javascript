@@ -1,0 +1,22 @@
+{
+  "name": "scripting",
+  "version": "1.0.0",
+  "description": "scripting practice",
+  "main": "classes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/norad89/scripting.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/norad89/scripting/issues"
+  },
+  "homepage": "https://github.com/norad89/scripting#readme",
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
+}
