@@ -99,10 +99,10 @@ function callback(sentence) {
 
 useCallback('pippo', callback);
 
-let num = 4;
+let num = 5;
 
 new Promise((resolve, reject) => {
-    if (num === 5) {
+    if (num === 4) {
         setTimeout(() => {
             resolve("yeah!");
         }, 1000);
